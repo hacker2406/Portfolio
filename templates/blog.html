@@ -1,0 +1,24 @@
+<section id="blog" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-extrabold text-gray-800 mb-10 text-center tracking-tight">
+            <span class="relative inline-block">
+                Latest Blog Posts
+                <span class="absolute bottom-0 left-1/4 right-1/4 h-1 bg-red-400 rounded"></span>
+            </span>
+        </h2>
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            {% for post in posts %}
+            <div class="bg-white shadow-lg rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">{{ post.title }}</h3>
+                <p class="text-gray-600 mb-4">{{ post.excerpt }}</p>
+                <a href="{{ post.link }}" class="text-red-500 hover:text-red-600 font-medium flex items-center group">
+                    <span>Read More</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

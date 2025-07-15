@@ -1,0 +1,17 @@
+[
+    {
+        "title": "How I Built My Portfolio with Flask & Tailwind",
+        "excerpt": "A step-by-step guide to building a modern portfolio using Python, Flask, and TailwindCSS.",
+        "link": "#"
+    },
+    {
+        "title": "Top 5 Full-Stack Projects for Beginners",
+        "excerpt": "Kickstart your development career with these essential projects and what I learned from them.",
+        "link": "#"
+    },
+    {
+        "title": "Tips for Clean Code & Collaboration",
+        "excerpt": "Best practices for writing maintainable code and working in teams.",
+        "link": "#"
+    }
+]

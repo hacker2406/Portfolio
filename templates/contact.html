@@ -1,0 +1,56 @@
+<section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-extrabold text-gray-800 mb-10 text-center tracking-tight">
+            <span class="relative inline-block">
+                Contact Me
+                <span class="absolute bottom-0 left-1/4 right-1/4 h-1 bg-red-400 rounded"></span>
+            </span>
+        </h2>
+        <!-- Increased max-width from max-w-xl to max-w-2xl -->
+        <div class="max-w-2xl mx-auto bg-white shadow-lg rounded-xl p-8 md:p-10 transform hover:shadow-2xl transition-all duration-300">
+            <form method="POST" action="{{ url_for('contact.contact') }}" class="space-y-6" id="contactForm">
+                <div>
+                    <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-red-500 focus:border-red-500 focus:outline-none transition-all duration-200">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-red-500 focus:border-red-500 focus:outline-none transition-all duration-200">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-red-500 focus:border-red-500 focus:outline-none transition-all duration-200"></textarea>
+                </div>
+                <button type="submit" class="bg-red-500 text-white py-3 px-6 rounded-lg hover:bg-red-600 font-medium shadow-lg transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 w-full flex items-center justify-center">
+                    <span>Send Message</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </form>
+            <div class="flex flex-col items-center gap-2 mt-8">
+                <span class="text-gray-700 text-lg"><strong>Email:</strong> <a href="mailto:ratul.9paul@gmail.com" class="text-red-500 hover:underline">ratul.9paul@gmail.com</a></span>
+                <span class="text-gray-700 text-lg"><strong>Mobile:</strong> <a href="tel:+919749737486" class="text-blue-500 hover:underline">+91 9749737486</a></span>
+                <div class="flex gap-6 mt-4">
+                    <a href="https://www.linkedin.com/in/ratulpaul2002/" target="_blank" class="inline-flex items-center gap-2 text-blue-600 hover:underline font-semibold">
+                        <svg class="h-5 w-5" fill="currentColor"><use href="#linkedin-icon"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/hacker2406" target="_blank" class="inline-flex items-center gap-2 text-gray-800 hover:underline font-semibold">
+                        <svg class="h-5 w-5" fill="currentColor"><use href="#github-icon"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SVG icons for LinkedIn/GitHub (add inside base.html or here) -->
+    <svg style="display:none;">
+        <symbol id="linkedin-icon" viewBox="0 0 24 24">
+            <path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.5s1.34 3 2.98 3 2.98-1.34 2.98-3S6.62 3.5 4.98 3.5zM2 21h6V9H2v12zm7.5-12h5.5v1.5h.09c.77-1.4 2.65-2.85 5.41-2.85 5.8 0 6.87 3.82 6.87 8.79V21h-6v-7.25c0-1.73-.03-3.96-2.42-3.96-2.42 0-2.79 1.89-2.79 3.84V21h-6V9z"/>
+        </symbol>
+        <symbol id="github-icon" viewBox="0 0 24 24">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.775.418-1.305.762-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 013.003-.404c1.018.005 2.042.138 3.003.403 2.291-1.552 3.297-1.23 3.297-1.23.654 1.653.243 2.873.12 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.803 5.625-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </symbol>
+    </svg>
+</section>

@@ -1,0 +1,25 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment/config
+.env
+
+# Logs
+*.log
+
+# Tailwind/Javascript build artifacts (if any)
+node_modules/
+dist/
+build/
+
+# Data files (optional, if you want to keep contact messages private)
+contact/contact_messages.json
